@@ -1,0 +1,32 @@
+#!perl
+
+# DATE
+# VERSION
+
+use strict;
+use warnings;
+use Data::Dmp;
+
+for my $i (0..$#ARGV) {
+    printf "%d\t%s\n", $i, dmp($ARGV[$i]);
+}
+
+# ABSTRACT: Print command-line arguments
+# PODNAME:
+
+=head1 SYNOPSIS
+
+ % print-argv 1 "2 3" ~/foo.txt $UID
+ 0       "1"
+ 1       "2 3"
+ 2       "/home/ujang/foo.txt"
+ 3       "1000"
+
+
+=head1 DESCRIPTION
+
+Will print command-line arguments encoded as Perl string literals, prefixed with
+index.
+
+
+=head1 SEE ALSO
