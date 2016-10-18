@@ -16,11 +16,13 @@ for my $i (0..$#ARGV) {
 
 =head1 SYNOPSIS
 
- % print-argv 1 "2 3" ~/foo.txt $UID
- 0       "1"
+ % print-argv 1 "2 3" ~/foo.txt $UID "`ls`" "$UNKNOWN"
+ 0       1
  1       "2 3"
  2       "/home/ujang/foo.txt"
- 3       "1000"
+ 3       1000
+ 4       "file1\nfile2\nfile3"
+ 5       ""
 
 
 =head1 DESCRIPTION
