@@ -1,0 +1,31 @@
+#!perl
+
+# DATE
+# VERSION
+
+use strict;
+use warnings;
+
+for my $k (sort keys %ENV) {
+    printf "%s\t%s\n", $k, $ENV{$k};
+}
+
+# ABSTRACT: Print environment variables
+# PODNAME:
+
+=head1 SYNOPSIS
+
+ % print-env
+
+
+=head1 DESCRIPTION
+
+Will print command-line arguments encoded as Perl string literals, prefixed with
+index.
+
+
+=head1 SEE ALSO
+
+L<printenv>
+
+C<set> (shell builtin)
