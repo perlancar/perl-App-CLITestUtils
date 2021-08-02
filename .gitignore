@@ -2,3 +2,4 @@ App-CLITestUtils-*
 .build
 *~
 nytprof*
+.DS_Store
